@@ -1,0 +1,9 @@
+[
+ {"name" : "free public transport" , "public_transport_price" : 0 },
+ {"name" : "faster public transport" , "public_transport_time" : 0.8 },
+ {"name" : "cheaper public transport" , "public_transport_price" : 0.5 },
+{"name" : "cheaper bus" , "bus_transport_price" : 0.5 },
+ {"name" : "faster private car" , "private_vehicle_time" : 0.5 },
+ {"name" : "more expensive private car" , "private_vehicle_price" : 1.5 },
+ {"name" : "faster transfer public transport" , "public_transport_transfer_time" : 0.5 },
+]

@@ -1,0 +1,53 @@
+<div class="row">
+    <a href="#/agents/{{type}}" class="btn btn-default">X</a>
+</div>
+
+<h2>{{type}} {{id}}</h2>
+
+<div class="btn-group pull-right" role="group">
+    <button title="Locate" class="btn btn-primary" ng-click="locateAgent(type , id , 'Here')">Locate</button>
+    <button title="Save" class="btn btn-primary" ng-click="saveAgent()">Save</button>
+    <button title="Reload" class="btn btn-primary" ng-click="getAgent()">Reload</button>
+    <button title="Run" class="btn btn-primary" ng-click="$root.runAgent( type , id )">Run</button>
+    <button title="Stop" class="btn btn-primary" ng-click="$root.stopAgent( type , id )">Stop</button>
+    <button title="Delete" class="btn btn-primary" ng-click="deleteAgent()">Delete</button>
+</div>
+
+<hr class="row col-xs-12">
+
+<div class="row">
+
+    <!-- GEOMETRY -->
+    <div class="col-sm-6">
+        <h4>Geometry:</h4>
+        
+        <div id="agent-map-canvas" class="well" style="width:100%;height:400px"></div>
+        <textarea type="text" class="form-control" rows="8" placeholder="Agent geometry" ng-model="agent.geometry | json" disabled></textarea>
+        
+    </div>
+
+
+    <!-- PROPERTIES -->
+    <div class="col-sm-6">
+        <h4>Properties:</h4>
+        <div class="form-group" ng-if="agent[key].type != undefined" ng-repeat="(key , value) in agent">
+            <div>{{key}}:</div>
+
+            <!-- IF THE PROPERTY LINKS AN AGENT -->
+            <div class="col-xs-12 input-group" ng-if="agent[key].type == 'agent'">
+                <div class="input-group-addon" ng-if="agent[key].pre">{{agent[key].pre}}</div>
+                <a class="form-control" href="#/agent/{{agent[key].class}}/{{agent[key].id}}">{{agent[key].name}}</a>
+                <div class="input-group-addon" ng-if="agent[key].post">{{agent[key].post}}</div>
+                <div class="input-group-addon" ng-click="locateAgent(agent[key].class , agent[key].id , 'HERE')">Locate</div>
+            </div>
+
+            <!-- ELSE -->
+            <div class="col-xs-12 input-group" ng-if="agent[key].type != 'agent'">
+                <div class="input-group-addon" ng-if="agent[key].pre">{{agent[key].pre}}</div>
+                <input class="form-control" type="{{agent[key].type}}" ng-model="agent[key].value">
+                <div class="input-group-addon" ng-if="agent[key].post">{{agent[key].post}}</div>
+            </div>
+        </div>
+    </div>
+
+</div>

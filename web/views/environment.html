@@ -1,0 +1,39 @@
+
+    <h2>Environment</h2>
+
+    <hr class="row col-xs-12">
+
+    <div ng-if="$root.environment" class="row">
+
+        <!-- GEOMETRY -->
+        <div class="col-sm-6">
+            <h4>Geometry:</h4>
+            <div>edit:</div>
+            <!--<textarea type="text" class="form-control" rows="8" placeholder="Agent geometry" ng-model="$root.agents[class_name][id].geometry | json" disabled></textarea>-->
+            
+            <div id="agent-map-canvas" class="well" style="width:100%;height:400px"></div>
+            
+        </div>
+
+
+        <!-- TIME -->
+        <div class="col-sm-6">
+            <h4>Time:</h4>
+            <div class="form-group" ng-repeat="(key , value) in $root.environment.attributes.time">
+                <div>{{key}}:</div>
+                <div class="col-xs-12 input-group">
+                    <input class="form-control" type="{{$root.environment.attributes.time[key].type}}" ng-model="$root.environment.attributes.time[key].value">
+                </div>
+            </div>
+            
+        <!-- PROPERTIES -->
+            <h4>Properties:</h4>
+            <div class="form-group" ng-if="$root.environment.attributes[key].type != undefined" ng-repeat="(key , value) in $root.environment.attributes">
+                <div>{{key}}:</div>
+                <div class="col-xs-12 input-group">
+                    <input class="form-control" type="{{$root.environment.attributes[key].type}}" ng-model="$root.environment.attributes[key].value">
+                </div>
+            </div>
+        </div>
+        
+    </div>

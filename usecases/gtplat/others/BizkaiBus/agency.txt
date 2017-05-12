@@ -1,0 +1,2 @@
+agency_id,agency_name,agency_phone,agency_url,agency_timezone,agency_lang
+158,Bizkaibus,902222265, http://www.bizkaia.net/home2/Temas/DetalleTema.asp?Tem_Codigo=195,Europe/Madrid,es

@@ -1,0 +1,56 @@
+<div class="row">
+    <a href="#/map" class="btn btn-default">X</a>
+</div>
+
+<div class="row">
+    <h2 class="col-xs-12">{{type}}</h2>
+    <div class="btn-group pull-right" role="group">
+        <button title="Run all" class="btn btn-primary" ng-click="runAll()">Run All</button>
+        <button title="Stop all" class="btn btn-primary" ng-click="stopAll()">Stop All</button>
+        <button title="Delete all" class="btn btn-primary" ng-click="deleteAll()">Delete All</button>
+    </div>
+</div>
+
+<hr class="row col-xs-12">
+
+<!-- LIST -->
+<div ng-if="agent" ng-repeat="agent in $root.agents[type]">
+
+    <div class="row">
+        
+        <!-- IF ICON -->
+        <div ng-if="agent.icon_url" class="col-xs-2">
+            <a href="#/agent/{{ agent.type }}/{{ agent.id }}">
+                <img class="img-responsive" style="max-height:64px" ng-src="{{agent.icon_url.value}}">
+            </a>
+        </div>
+        
+        <!-- IF NOT ICON -->
+        <div ng-if="!agent.icon_url" class="col-xs-2" style="height:32px; border:2px solid {{agent.border_color.value}}; background-color:{{agent.color.value}}">
+        </div>
+        
+        <!-- NAME -->
+        <div class="col-xs-6">
+            <a href="#/agent/{{ agent.type }}/{{ agent.id }}">{{ agent.name.value }} - {{ agent.type }} {{ agent.id }}</a>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="col-xs-4">
+            <div class="btn-group pull-right" role="group">
+                <a title="View" class="btn btn-xs btn-primary" href="#/agent/{{agent.type}}/{{agent.id}}">View</a>
+                <button title="Run" class="btn btn-xs btn-primary" ng-click="$root.runAgent( agent.type, agent.id )">Run</button>
+                <button title="Stop" class="btn btn-xs btn-primary" ng-click="$root.stopAgent( agent.type, agent.id )">Stop</button>
+                <button title="Delete" class="btn btn-xs btn-primary" ng-click="$root.deleteAgent( agent.type, agent.id )">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <hr class="row">
+
+</div>
+
+<!-- LIST -->
+
+<div class="row">
+    <button class="btn btn-lg btn-block btn-default" ng-click="getNextPaginated()">View more</button>
+</div>

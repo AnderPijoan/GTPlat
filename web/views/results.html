@@ -1,0 +1,18 @@
+<div class="row">
+    <a href="#/map" class="btn btn-default">X</a>
+</div>
+
+    <div ng-if="results.current_modes">
+        <h3>Currently travelling</h3>
+        <nvd3 options="results.current_modes.options" data="results.current_modes.data"></nvd3>
+    </div>
+
+    <div ng-if="results.chosen_modes">
+        <h3>Chosen options</h3>
+        <nvd3 options="results.chosen_modes.options" data="results.chosen_modes.data"></nvd3>
+    </div>
+    
+    <div ng-if="results.impact_cc">
+        <h3>Climate Change impact</h3>
+        <nvd3 options="results.impact_cc.options" data="results.impact_cc.data"></nvd3>
+    </div>

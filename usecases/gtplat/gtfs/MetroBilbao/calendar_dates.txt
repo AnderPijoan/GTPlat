@@ -1,0 +1,5 @@
+service_id,date,exception_type
+invsa-2016.pex,20170304,2
+carnalgsa-2016.pex,20170304,1
+invdo-2016.pex,20170305,2
+fucaralgdo2045-16.pex,20170305,1

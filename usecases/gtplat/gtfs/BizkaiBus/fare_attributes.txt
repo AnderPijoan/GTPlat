@@ -1,0 +1,6 @@
+fare_id,price,currency_type,payment_method,transfers,transfer_duration
+1,1.30,EUR,0,,
+2,1.45,EUR,0,,
+3,1.85,EUR,0,,
+4,2.50,EUR,0,,
+5,3.30,EUR,0,,

@@ -1,0 +1,28 @@
+[
+
+
+{"from" : "Bilbao" , "to" : "Bilbao" , "profile" : "CAN CHOOSE ALL USER" , "amount" : 1000 , "time" : "07:00:00" , "spread" : 60},
+
+{"from" : "Basauri" , "to" : "Bilbao" , "profile" : "CAN CHOOSE ALL USER" , "amount" : 1000 , "time" : "07:00:00" , "spread" : 60},
+
+{"from" : "Barakaldo" , "to" : "Bilbao" , "profile" : "CAN CHOOSE ALL USER" , "amount" : 1000 , "time" : "07:00:00" , "spread" : 60},
+
+{"from" : "Durango" , "to" : "Bilbao" , "profile" : "CAN CHOOSE ALL USER" , "amount" : 1000 , "time" : "07:00:00" , "spread" : 60},
+
+{"from" : "Erandio" , "to" : "Bilbao" , "profile" : "CAN CHOOSE ALL USER" , "amount" : 1000 , "time" : "07:00:00" , "spread" : 60},
+
+{"from" : "Galdakao" , "to" : "Bilbao" , "profile" : "CAN CHOOSE ALL USER" , "amount" : 1000 , "time" : "07:00:00" , "spread" : 60},
+
+{"from" : "Getxo" , "to" : "Bilbao" , "profile" : "CAN CHOOSE ALL USER" , "amount" : 1000 , "time" : "07:00:00" , "spread" : 60},
+
+{"from" : "Leioa" , "to" : "Bilbao" , "profile" : "CAN CHOOSE ALL USER" , "amount" : 1000 , "time" : "07:00:00" , "spread" : 60},
+
+{"from" : "Portugalete" , "to" : "Bilbao" , "profile" : "CAN CHOOSE ALL USER" , "amount" : 1000 , "time" : "07:00:00" , "spread" : 60},
+
+{"from" : "Santurtzi" , "to" : "Bilbao" , "profile" : "CAN CHOOSE ALL USER" , "amount" : 1000 , "time" : "07:00:00" , "spread" : 60},
+
+{"from" : "Sestao" , "to" : "Bilbao" , "profile" : "CAN CHOOSE ALL USER" , "amount" : 1000 , "time" : "07:00:00" , "spread" : 60},
+
+{"from" : "GranBilbao" , "to" : "Bilbao" , "profile" : "CAN CHOOSE ALL USER" , "amount" : 1000 , "time" : "07:00:00" , "spread" : 60}
+
+]

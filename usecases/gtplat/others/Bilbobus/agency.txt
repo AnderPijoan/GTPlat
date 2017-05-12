@@ -1,0 +1,2 @@
+agency_id,agency_name,agency_phone,agency_url,agency_timezone,agency_lang
+27,Bilbobus,0034944790981,http://www.bilbao.net/bilbobus,Europe/Madrid,es

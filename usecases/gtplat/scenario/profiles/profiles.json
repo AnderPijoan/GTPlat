@@ -1,0 +1,13 @@
+[
+{"name" : "WALK USER" ,             "options": ["WALK"] },
+{"name" : "BICYCLE USER" ,          "options":["BICYCLE"] },
+{"name" : "MOTORCYCLE USER" ,       "options":["MOTORCYCLE"] },
+{"name" : "CAR USER" ,              "options": ["CAR"] },
+{"name" : "BUS USER" ,              "options":["TRANSIT"] },
+{"name" : "SUBWAY USER" ,           "options":["TRANSIT"] },
+{"name" : "RAIL USER" ,             "options":["TRANSIT"] },
+
+{"name" : "PUBLIC_TRANSPORT USER" , "options":["TRANSIT"] },
+
+{"name" :"CAN CHOOSE ALL USER" ,    "options":["WALK","CAR","MOTORCYCLE","BICYCLE","TRANSIT"] }
+]

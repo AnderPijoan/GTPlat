@@ -1,0 +1,11 @@
+[
+
+{"from" : "Bilbao" , "to" : "Bilbao" , "profile" : "CAR USER" ,          "train_with" : "CAR",           "amount" : 3014 , "time" : "07:00:00" , "spread" : 60},
+{"from" : "Bilbao" , "to" : "Bilbao" , "profile" : "BUS USER" ,          "train_with" : "BUS",           "amount" : 909 , "time" : "07:00:00" , "spread" : 60},
+{"from" : "Bilbao" , "to" : "Bilbao" , "profile" : "SUBWAY USER" ,       "train_with" : "SUBWAY",        "amount" : 1908 , "time" : "07:00:00" , "spread" : 60},
+{"from" : "Bilbao" , "to" : "Bilbao" , "profile" : "MOTORCYCLE USER" ,   "train_with" : "MOTORCYCLE",    "amount" : 172 , "time" : "07:00:00" , "spread" : 60},
+{"from" : "Bilbao" , "to" : "Bilbao" , "profile" : "WALK USER" ,         "train_with" : "WALK",          "amount" : 2022 , "time" : "07:00:00" , "spread" : 60},
+{"from" : "Bilbao" , "to" : "Bilbao" , "profile" : "RAIL USER" ,         "train_with" : "RAIL",          "amount" : 165 , "time" : "07:00:00" , "spread" : 60},
+{"from" : "Bilbao" , "to" : "Bilbao" , "profile" : "BICYCLE USER" ,      "train_with" : "BICYCLE",       "amount" : 143 , "time" : "07:00:00" , "spread" : 60}
+
+]

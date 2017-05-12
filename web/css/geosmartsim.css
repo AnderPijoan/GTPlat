@@ -1,0 +1,13 @@
+html, body {
+    height:100%;
+    width:100%;
+}
+
+/* Font size for NVD3 graphs*/
+
+.nv-x text{
+  font-size: 12px;
+}
+.nv-y text{
+  font-size: 12px;
+}

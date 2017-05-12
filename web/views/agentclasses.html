@@ -1,0 +1,16 @@
+<div class="row">
+    <a href="#/map" class="btn btn-default">X</a>
+</div>
+
+<h2>Agents in environment:</h2>
+
+<ul class="list-group">
+    <li class="list-group-item row" ng-repeat="type in agent_types">
+        <h3 class="col-xs-6">
+            <a href="#/agents/{{type}}">{{type}}</a>
+        </h3>
+        <a href="#/agents/{{type}}" class="btn col-xs-3 btn-primary">View all</a>
+        <button ng-click="runAll(type)" class="btn col-xs-3 btn-primary">Run all</a>
+    </li>
+</ul>
+
